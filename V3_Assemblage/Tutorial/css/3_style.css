@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'NarrowBold';
+    src: url('InputMonoNarrow-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowBoldItal';
+    src: url('InputMonoNarrow-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowThin';
+    src: url('InputMonoNarrow-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowRegular';
+    src: url('InputMonoNarrow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowExtraLight';
+    src: url('InputMonoNarrow-ExtraLight.ttf');
+}
+
+html,
+body {
+    /* margin: 0; */
+    width: 100vw;
+    height: 100vh;
+}
+
+a:-webkit-any-link {
+    color: black;
+}
+
+#Titre {
+    font-size: 10vw;
+    margin: 2vw;
+    font-family: 'NarrowBold';
+    z-index: 100;
+    /* background-color: white; */
+    top: 10vh;
+    position: absolute;
+    z-index: 10;
+}
+
+#SousTitre {
+    margin: 2vw;
+    font-family: 'NarrowThin';
+}
+
+#Menu {
+    width: 25vw;
+    background-color: yellow;
+    right: -25vw;
+    margin: 2vw;
+    height: 46vh;
+    top: 20vh;
+    position: absolute;
+    z-index: 100;
+    transition: all ease 500ms;
+    cursor: pointer;
+}
+
+.Parties {
+    font-family: 'NarrowRegular';
+    margin: 2vw;
+    float: left;
+}
+
+#canvasBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -5;
+}
+
+.Lettres {
+    float: left;
+}
+
+#Explication {
+    width: 50vw;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 45vh;
+    margin: 2vh;
+    font-family: 'NarrowRegular';
+    padding: 5vh;
+}
+
+#Canvas {
+    border: solid black 2px;
+}
+
+#ContainerCanvas {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 55vw;
+    top: 25vh;
+}
+
+.Onglets {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 1vh;
+    /* margin: 3vh; */
+    /* line-height: 50px; */
+    text-align: center;
+    color: black;
+    border: solid black 2px;
+}
+
+#ContainerOnglets {
+    /* position: absolute; */
+    float: left;
+    position: relative;
+    width: 22vw;
+    top: 25vh;
+}
+
+#FunctionName {
+    /* position: relative; */
+    /* margin-left: auto; */
+    margin-right: auto;
+    width: 430px;
+    padding-bottom: 1vh;
+}
+
+#ContainerCodeSource {
+    width: 30vw;
+    position: fixed;
+    left: 70vw;
+    top: 21vh;
+}
+
+
+/* Code */
+
+#AfficheurCode {
+    margin: 0vh 2vh 0vh 2vh;
+    height: 0vh;
+    overflow: scroll;
+    width: 26vw;
+    border: black solid 0px;
+    background-color: white;
+    /* left: 70vw; */
+    cursor: pointer;
+    /* position: fixed; */
+    resize: both;
+    transition: all ease 500ms;
+}
+
+#TitreAfficheurCode {
+    margin: 0vh 2vh 0vh 2vh;
+    cursor: pointer;
+    color: blue;
+}
+
+#CodeSource {
+    font-size: 11px;
+    max-width: 20px;
+}
+
+#Gomme {
+    right: 0;
+    width: 11vw;
+    height: auto;
+    border: solid black 2px;
+    cursor: pointer;
+    padding: 1vw;
+    position: absolute;
+}
+
+#Petit {
+    width: 1vw;
+    height: 1vw;
+    border: solid black 2px;
+    float: right;
+    margin: 1vh;
+}
+
+#Moyen {
+    width: 2vw;
+    height: 2vw;
+    border: solid black 2px;
+    float: right;
+    margin: 1vh;
+}
+
+#Gros {
+    width: 3vw;
+    height: 3vw;
+    border: solid black 2px;
+    float: right;
+    margin: 1vh;
+}
+
+
+/* Clavier */
+
+#Table {
+    position: absolute;
+    opacity: 1;
+    /* bottom: 7vh; */
+    width: 10vw;
+    right: 0vw;
+    transition: 1s;
+}
+
+.t1 {
+    position: absolute;
+    top: 20vh;
+    right: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+    background-color: white;
+}
+
+.t2 {
+    border: 2px solid black;
+}
+
+.t2 td:hover {
+    background-color: grey;
+}
+
+.t2 th:hover {
+    background-color: grey;
+}
+
+
+/* Couleur en cours */
+
+#Palette {
+    width: auto;
+    height: auto;
+    border: solid black 2px;
+    position: absolute;
+    margin: 1vh;
+    padding: 2vh;
+    right: 0vh;
+    bottom: 5vh;
+}
+
+#CouleurEnCours {
+    width: 40px;
+    height: 40px;
+    border: solid black 2px;
+    float: right;
+    margin: 1vh;
+}

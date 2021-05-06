@@ -1,0 +1,146 @@
+#NewCanvas {}
+
+canvas {
+    border: solid black 2px;
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'NarrowBold';
+    src: url('InputMonoNarrow-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowBoldItal';
+    src: url('InputMonoNarrow-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowThin';
+    src: url('InputMonoNarrow-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowRegular';
+    src: url('InputMonoNarrow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowExtraLight';
+    src: url('InputMonoNarrow-ExtraLight.ttf');
+}
+
+html,
+body {
+    /* margin: 0; */
+    width: 100vw;
+    height: 100vh;
+}
+
+a:-webkit-any-link {
+    color: black;
+}
+
+#Titre {
+    font-size: 10vw;
+    margin: 2vw;
+    font-family: 'NarrowBold';
+    z-index: 100;
+    /* background-color: white; */
+    top: 10vh;
+    position: absolute;
+    z-index: 10;
+}
+
+#SousTitre {
+    margin: 2vw;
+    font-family: 'NarrowThin';
+}
+
+#Menu {
+    width: 25vw;
+    background-color: yellow;
+    right: -25vw;
+    margin: 2vw;
+    height: 46vh;
+    top: 20vh;
+    position: absolute;
+    z-index: 100;
+    transition: all ease 500ms;
+    cursor: pointer;
+}
+
+.Parties {
+    font-family: 'NarrowRegular';
+    margin: 2vw;
+    float: left;
+}
+
+#Canvas {
+    position: absolute;
+    top: 31vh;
+    margin: 2vw;
+    left: 0;
+    /* opacity: 0.4; */
+    z-index: -5;
+}
+
+#Explication {
+    width: 50vw;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 45vh;
+    margin: 2vh;
+    font-family: 'NarrowRegular';
+    padding: 5vh;
+}
+
+#Infos {
+    font-family: 'NarrowThin';
+    position: absolute;
+    top: 29vh;
+    margin: 2vw;
+}
+
+#Infos {
+    font-family: 'NarrowThin';
+    position: absolute;
+    top: 29vh;
+    margin: 2vw;
+}
+
+#Afficheur {
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+    position: absolute;
+    top: 45vh;
+    margin: 2vh;
+    font-family: 'NarrowRegular';
+    padding: 5vh;
+    border: solid black;
+}
+
+#ContainerTexte {
+    top: 85vh;
+    /* padding: 2vh; */
+    margin: 2vw;
+    /* line-height: 10vh; */
+    text-align: center;
+    left: 0;
+    position: absolute;
+    width: 1300px;
+    font-size: 25px;
+    height: 85px;
+    background-color: white;
+    border: solid black 2px;
+}
+
+#TexteAleatoire {
+    top: 85vh;
+    margin: 2vw;
+    text-align: center;
+    left: 0;
+    font-size: 25px;
+}

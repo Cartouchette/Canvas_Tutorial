@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'NarrowBold';
+    src: url('InputMonoNarrow-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowBoldItal';
+    src: url('InputMonoNarrow-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowThin';
+    src: url('InputMonoNarrow-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowRegular';
+    src: url('InputMonoNarrow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NarrowExtraLight';
+    src: url('InputMonoNarrow-ExtraLight.ttf');
+}
+
+html,
+body {
+    /* margin: 0; */
+    width: 100vw;
+    height: 100vh;
+}
+
+a:-webkit-any-link {
+    color: black;
+}
+
+#Titre {
+    font-size: 10vw;
+    margin: 2vw;
+    font-family: 'NarrowBold';
+    z-index: 100;
+    /* background-color: white; */
+    top: 10vh;
+    position: absolute;
+    z-index: 10;
+}
+
+#SousTitre {
+    margin: 2vw;
+    font-family: 'NarrowThin';
+}
+
+#Menu {
+    width: 25vw;
+    background-color: yellow;
+    right: -25vw;
+    margin: 2vw;
+    height: 46vh;
+    top: 20vh;
+    position: absolute;
+    z-index: 100;
+    transition: all ease 500ms;
+    cursor: pointer;
+}
+
+.Parties {
+    font-family: 'NarrowRegular';
+    margin: 2vw;
+    float: left;
+}
+
+#canvasBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -5;
+}
+
+.Lettres {
+    float: left;
+}
+
+#Explication {
+    width: 50vw;
+    height: 200vh;
+    background-color: rgb(255, 255, 255, 0.6);
+    position: absolute;
+    top: 45vh;
+    margin: 2vh;
+    font-family: 'NarrowRegular';
+    padding: 5vh;
+}
+
+.Code1 {
+    width: fit-content;
+    float: left;
+    font-size: 25px;
+}
+
+.Code1:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#Attribut {
+    width: fit-content;
+    float: left;
+    font-size: 25px;
+    margin-left: 2vh;
+    color: green;
+}
+
+#Attribut:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+#Code {
+    width: fit-content;
+    margin: 2vh;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: antiquewhite; */
+}
+
+#Afficheur {
+    display: none;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 45vh;
+    margin: 2vh;
+    font-family: 'NarrowRegular';
+    padding: 5vh;
+    border: solid black;
+    max-width: 450px;
+}
+
+#TitreExp {}
+
+#Container {
+    position: relative;
+    top: 5px;
+    width: 500px;
+    height: 500px;
+    font-size: 25px;
+    background-color: white;
+    border: solid black 2px;
+}
+
+#Can_Tete {
+    position: absolute;
+    display: block;
+    margin-left: -50px;
+    margin-right: auto;
+}
+
+#Can_Yeux {
+    position: absolute;
+    display: block;
+    margin-left: 50px;
+    /* margin-top: 20px; */
+}
+
+#Can_Bouche {
+    position: absolute;
+    /* left: 0; */
+    /* right: 0; */
+    top: 240px;
+    margin-left: 50px;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#BoutonsSmiley {
+    position: absolute;
+    top: 10vh;
+    left: 45vw;
+    width: 10vh;
+}
+
+#tete {
+    font-family: 'NarrowRegular';
+    width: 100px;
+    height: 60px;
+    left: -26px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+#bouche {
+    width: 100px;
+    font-family: 'NarrowRegular';
+    height: 60px;
+    left: -26px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#yeux {
+    font-family: 'NarrowRegular';
+    width: 100px;
+    height: 60px;
+    left: -26px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#ensemble {
+    font-family: 'NarrowRegular';
+    width: 100px;
+    height: 60px;
+    left: -26px;
+    /* background-color: black; */
+    color: red;
+    margin: 10px;
+    border: 2px solid blue;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#animer {
+    font-family: 'NarrowRegular';
+    width: 100px;
+    height: 60px;
+    left: -26px;
+    /* background-color: black; */
+    color: red;
+    margin: 10px;
+    border: 2px solid blue;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#SeeCode {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: grey;
+    z-index: 20;
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#TexteSeeCode {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}

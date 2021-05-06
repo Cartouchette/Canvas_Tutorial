@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Outils</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="css/3_style.css" />
+    <script src="js/3_script.js">
+    </script>
+</head>
+
+<body>
+
+    <div id="SousTitre"> <a href="index.html">Index*</a></div>
+    <div id="Titre">
+        Boite à outils
+    </div>
+
+    <div id="Menu">
+        <a href="1_Exp.html" class="Parties">1.Qu'est ce que le canvas?</a>
+        <a href="2_Inventaire.html" class="Parties">2.Inventaire de formes</a>
+        <a href="3_Outils.html" class="Parties">3.Outils à dessin</a>
+        <a href="4_Animations.html" class="Parties">4.Animations</a>
+    </div>
+
+    <div id="AfficheurCode">
+        <pre id="CodeSource">
+        </pre>
+    </div>
+
+
+    <div id="ContainerOnglets">
+        <div class="Onglets">Le clavier agis sur les formes</div>
+        <div class="Onglets">Formes aléatoire</div>
+        <div class="Onglets">Pixels qui grossissent</div>
+    </div>
+
+    <div id="ContainerCanvas">
+        <div id="FunctionName"> Fonction ();</div>
+        <div id="Gomme"> Gomme <br>
+            <div id="Petit"></div>
+            <div id="Moyen"></div>
+            <div id="Gros"></div>
+        </div>
+        <!-- Simulation clavier -->
+        <table id="Table" class="t1 t2">
+            <tr>
+                <td id="a">a</td>
+                <td id="b">b</td>
+            </tr>
+            <tr>
+                <td id="c">c</td>
+                <td id="d">d</td>
+            </tr>
+            <tr>
+                <td id="e">e</td>
+                <td id="f">f</td>
+            </tr>
+        </table>
+
+        <!-- Couleur en cours -->
+        <div id="Palette">
+            <div id="CouleurEnCours"></div>
+            <p id="NomCouleur"></p>
+        </div>
+        <canvas id="Canvas"></canvas>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
